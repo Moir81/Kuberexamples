@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: Leemysql
+  labels:
+    app: mysql
+spec:
+  containers:
+  - name: mysql
+    image: mysql:5.7
+   env:
+    - MYSQL_DATABASE: root
+      MYSQL_ROOT_PASSWORD: root
+  
