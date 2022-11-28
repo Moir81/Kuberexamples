@@ -8,7 +8,9 @@ spec:
   containers:
   - name: mysql
     image: mysql:5.7
-   env:
-    - MYSQL_DATABASE: root
-      MYSQL_ROOT_PASSWORD: root
+    env:
+    - name: MYSQL_DATABASE
+      value: "root"
+    - password:  MYSQL_ROOT_PASSWORD
+      value: "root"
   
