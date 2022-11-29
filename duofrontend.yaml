@@ -52,5 +52,7 @@ spec:
         volumeMounts:
         - name: nginx-config-volume
           mountpath: /etc/nginx/conf.d
-      volumes: nginx-config-volume
-        name: nginx-config
+      volumes: 
+      - name: nginx-config-volume
+        configmap:
+          name: nginx-config
