@@ -20,7 +20,7 @@ spec:
   selector:
     app: duofrontend
   ports:
-  - protocol: tcp
+  - protocol: TCP
     port: 80
     targetPort: 80
 ---
