@@ -20,7 +20,7 @@ spec:
   selector:
     app: duofrontend
   ports:
-  - protocol: TCP
+  - protocol: tcp
     port: 80
     targetPort: 80
 ---
@@ -48,7 +48,7 @@ spec:
       - name: duofrontend
         image: nginx:alpine
         ports:
-         containerPort: 80
+        - containerPort: 80
         volumeMounts:
         - name: nginx-config-volume
           mountPath: /etc/nginx/conf.d
